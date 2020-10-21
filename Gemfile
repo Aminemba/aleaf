@@ -53,6 +53,7 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+gem 'database_cleaner'
 gem 'will_paginate', '~> 3.1', '>= 3.1.6'
 gem 'database_cleaner'
 gem 'factory_bot_rails'
