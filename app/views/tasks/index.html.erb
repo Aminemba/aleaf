@@ -12,23 +12,8 @@
         <% end %><br>
       </div>
 
-      <table class = "table table-bordered w-25 ml-5">
-        <thead class="bg-dark text-light">
-          <tr>
-            <th>Label Name</th>
-            <th>User</th>
-          </tr>
-        </thead>
+  
 
-        <tbody>
-          <% Label.all.each do |label| %>
-          <tr>
-            <td><%= label.name %></td>
-            <td><%= label.user.firstname %></td>
-          </tr>
-          <% end %>
-        </tbody>
-      </table>
     </div>
   </div>
 </div>
