@@ -10,15 +10,7 @@
 
 
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-md-auto">
-        <%= form_tag users_path, method: :get, class: "form-inline my-2 my-lg-0 ml-md-auto", id: "users-search",
-        remote: true do %>
-        <% end %>
 
-        <br>
-
-        <% if logged_in? %>
 
 
         <li class="nav-item">
@@ -39,31 +31,6 @@
         </li>
 
 
-        <li class="nav-item">
-          <%= link_to 'My Tasks', user_path(current_user.id) , class: " btn btn-outline-info rounded-pill nav-item " %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "Labels", labels_path , class: "btn btn-outline-info rounded-pill nav-item " %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "Admin dashboard", admin_users_path , class: "nav-link core-sprite profile-icon hide-text" %>
-        </li>
-
-
-
-
-        <li class="nav-item">
-          <%= link_to "Log out", session_path(current_user.id), method: :delete,
-          class: "  list-group-item btn-outline-danger btn-danger rounded-pill btn-group btn-group-lg " %>
-        </li>
-
-        <% end %>
-
-
-
-      </ul>
-
 
     </div>
-  </div>
 </nav>
