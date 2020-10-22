@@ -6,8 +6,8 @@ class TasksController < ApplicationController
   end
 
   def index
-    @search = Task.ransack(params[:pr])
-    if params[:pr]
+    @search = Task.ransack(params[:q])
+    if params[:q]
       @tasks = @search.result.page params[:page]
     elsif params[:search_label]
     @tasks = Task.joins(:labels)
