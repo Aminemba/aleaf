@@ -29,7 +29,7 @@ class TasksController < ApplicationController
   end
 
   def create
-    @task = current_user.tasks.build(task_params)
+    @task = task.build(task_params)
     respond_to do |format|
       if @task.save
         format.html { redirect_to @task }
