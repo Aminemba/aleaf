@@ -55,6 +55,8 @@ class TasksController < ApplicationController
   end
 
   def destroy
+    # @task = tasks(task_params)
+    # tasks = Task.all
     @task.destroy
     respond_to do |format|
       format.html { redirect_to tasks_url, notice: 'Task was successfully deleted.' }
@@ -70,6 +72,6 @@ class TasksController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def task_params
-      params.require(:task).permit(:title, :content, :status, :priority, :start_at, :end_at, :search_label, label_ids: [])
+      params.require(:task).permit(:title, :content, :status, :priority, :start_at, :end_at)
     end
 end
