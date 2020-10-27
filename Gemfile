@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.6.5'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
+gem 'rails', '~> 5.2.4'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
@@ -20,7 +20,7 @@ gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
@@ -53,3 +53,22 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+
+gem 'will_paginate', '~> 3.1', '>= 3.1.6'
+gem 'database_cleaner'
+gem 'factory_bot_rails'
+gem 'rspec', '~> 3.9'
+gem 'launchy'
+gem 'ransack'
+gem 'faker', :require => false
+gem 'carrierwave', '~> 2.1'
+gem 'mini_racer'
+gem 'cloudinary'
+gem 'coffee-rails', '~> 4.2'
+gem 'figaro'
+gem 'jquery-rails'
+gem 'meta-tags'
+gem 'toastr-rails'
+gem 'uglifier', '>= 1.3.0'
+gem 'bootstrap', '~> 4.0.0'
