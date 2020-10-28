@@ -11,10 +11,10 @@ RSpec.feature "Task management function", type: :feature do
   scenario "Test task creation" do
     visit new_task_path
     save_and_open_page
-    fill_in 'Title', with: 'greeting'
-    fill_in 'Content', with: 'good'
+    fill_in 'Title', with: 'haha'
+    fill_in 'Content', with: 'lol'
     click_button 'Save'
-    expect(page).to have_content 'good'
+    expect(page).to have_content 'lol'
   end
 
   scenario "Test whether tasks are arranged in descending order of creation date" do
